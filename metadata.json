@@ -1,0 +1,5 @@
+{
+  "name": "ODF Real-Time Feed Prototype",
+  "description": "Protótipo de recepção e visualização em tempo real do Olympic Data Feed (ODF) para o COB.",
+  "requestFramePermissions": []
+}

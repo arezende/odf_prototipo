@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-cob-green: #008542;
+  --color-cob-blue: #005DAA;
+  --color-cob-yellow: #F9D616;
+  --color-cob-dark: #0A1F33;
+  
+  --shadow-premium: 0 10px 30px -10px rgba(0, 93, 170, 0.15);
+  --shadow-inner-soft: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8FAFC] text-slate-900 antialiased;
+  }
+  
+  .serif {
+    font-family: 'Georgia', serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-premium;
+  }
+  
+  .cob-gradient-green {
+    @apply bg-gradient-to-br from-cob-green to-[#006837];
+  }
+  
+  .cob-gradient-blue {
+    @apply bg-gradient-to-br from-cob-blue to-[#004A87];
+  }
+}
